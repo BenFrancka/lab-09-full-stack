@@ -1,6 +1,6 @@
 import request from 'superagent';
 
-const URL = 'hidden-citadel-20940.herokuapp.com'; 
+const URL = 'https://hidden-citadel-20940.herokuapp.com'; 
 
 export async function getAllMeals() {
     const data = await request.get(`${URL}/meals`);

@@ -4,18 +4,12 @@ import {
   Switch,
   Route,
   Link,
-  useParams
+  //useParams
 } from "react-router-dom";
 import './App.css';
 import MealPage from "./MealPage";
 import CreateMealPage from "./CreateMealPage";
 import MealDetailPage from "./MealDetailPage";
-
-// Params are placeholders in the URL that begin
-// with a colon, like the `:id` param defined in
-// the route in this example. A similar convention
-// is used for matching dynamic segments in other
-// popular web frameworks like Rails and Express.
 
 export default class App extends Component {
   render() {
