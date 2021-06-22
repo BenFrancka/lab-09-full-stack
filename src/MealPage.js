@@ -24,9 +24,6 @@ export default class MealPage extends Component {
                             {meal.name}
                         </p>
                         <p>
-                            In Stock: {meal.in_stock}
-                        </p>
-                        <p>
                             {meal.description}
                         </p>
                         <p>
