@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   Link,
-  useParams
+  //useParams
 } from "react-router-dom";
 import './App.css';
 import MealPage from "./MealPage";
@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="top">
           <h2>Meal Kits Page</h2>
           <p><Link to="/">Home</Link></p>
           <p><Link to="/create">Add meal</Link>

@@ -32,7 +32,6 @@ export default class MealDetailPage extends Component {
             category_id: meal.category_id,
             categories: categories
         })
-        console.log(categories);
     }
 
     handleNameChange = e => {
@@ -75,7 +74,6 @@ export default class MealDetailPage extends Component {
     }
 
     render() {
-        console.log(this.state.category_id);
         return (
             <div>
                 <h2>
