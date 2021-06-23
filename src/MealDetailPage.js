@@ -22,7 +22,7 @@ export default class MealDetailPage extends Component {
 
         const meal = await getOneMeal(id);
         const categories = await getAllCategories();
-
+console.log(meal.category_id);
         this.setState({
             name: meal.name,
             description: meal.description,
@@ -74,28 +74,29 @@ export default class MealDetailPage extends Component {
     }
 
     render() {
+        console.log(this.state.category_id);
         return (
             <div>
                 <h2>
                     Update Meal
                 </h2>
-                <form onSubmit={this.handleSubmit}>
+                <form className="form" onSubmit={this.handleSubmit}>
                     <label>
-                        Name
+                        Name<br></br>
                         <input
                         value={this.state.name} 
                         onChange={this.handleNameChange}
                         />
                     </label>
                     <label>
-                        Description
+                        Description<br></br>
                         <input 
                         value={this.state.description} 
                         onChange={this.handleDescriptionChange}
                         />
                     </label>
                     <label>
-                        Price
+                        Price<br></br>
                         <input 
                         value={this.state.price} 
                         type='number' 
@@ -103,7 +104,7 @@ export default class MealDetailPage extends Component {
                         />
                     </label>
                     <label>
-                        Difficulty
+                        Difficulty<br></br>
                         <select
                         onChange={this.handleDifficultyChange}>
                             <option value={this.state.difficulty} defaultValue>
@@ -121,13 +122,10 @@ export default class MealDetailPage extends Component {
                         </select>
                     </label>
                     <label>
-                        Category
+                        Category<br></br>
                         <select 
                         onChange={this.handleCategoryChange}
                         >   
-                            <option value={this.state.category}>
-                                {this.state.category}
-                            </option>
                             {this.state.categories.map(category =>
                                 <option
                                 selected={

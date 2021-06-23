@@ -31,25 +31,37 @@
   background-color: cadetblue;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: burlywood;
   border: solid blue 1rem;
   border-radius: 25px;
+  text-align: center;
 }
 
 input {
   font-size: 1rem;
-  margin-left: 5%;
+  margin-left: 2%;
   border-radius: 10px;
+  text-align: center;
 }
+
+input:hover {
+  background-color: salmon;
+}
+
 
 button {
   margin: 10%;
   font-size: 2rem;
   border-radius: 25px;
   border: outset black 1rem;
+}
+
+button:hover {
+  border-color: green;
 }
 
 button:active {
@@ -71,7 +83,7 @@ h2 {
 .link{
   border: solid black 1rem;
   border-radius: 25px;
-  background-color:powderblue;
+  background-color:honeydew;
   padding: 2%;
 }
 
@@ -84,6 +96,12 @@ h2 {
 select {
   font-size: 1rem;
 }
+
+select:hover {
+  background-color: salmon;
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/food/foo-2/foo101.cur), auto !important;} /* End https://www.cursors-4u.com */
 
 
 

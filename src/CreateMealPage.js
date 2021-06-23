@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { createMeal } from './utils';
 
+
 export default class CreateMealPage extends Component {
 
     state = {
@@ -49,27 +50,27 @@ export default class CreateMealPage extends Component {
         return (
             <div>
                 <h2>Add A MealKit</h2>
-                <form onSubmit={this.handleSubmit}>
+                <form className="form" onSubmit={this.handleSubmit}>
                     <label>
-                        Name
+                        Name<br></br>
                         <input 
                         onChange={this.handleNameChange}/>
                     </label>
                     <label>
-                        Description
+                        Description<br></br>
                         <input 
                         onChange={this.handleDescriptionChange}
                         />
                     </label>
                     <label>
-                        Price
+                        Price<br></br>
                         <input 
                         type='number' 
                         onChange={this.handlePriceChange}
                         />
                     </label>
                     <label>
-                        Difficulty Level
+                        Difficulty Level<br></br>
                         <select onChange={this.handleDifficultyChange}>
                             <option value="easy">
                                 Easy
@@ -83,7 +84,7 @@ export default class CreateMealPage extends Component {
                         </select>
                     </label>
                     <label>
-                        Category
+                        Category<br></br>
                         <select onChange={this.handleCategoryChange}>
                                 <option value="1">
                                     Mexican
