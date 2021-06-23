@@ -2,37 +2,108 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.meals {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.meal {
+  border: solid 1rem;
+  border-radius: 25px;
+  margin: 5%;
+  text-align: center;
+  background-color: burlywood;
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meal:hover {
+  background-color: plum;
+  transform: translateY(4px);
+}
+
+.top {
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: solid black 1rem;
+  background-color: cadetblue;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: burlywood;
+  border: solid blue 1rem;
+  border-radius: 25px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 1rem;
+  margin-left: 2%;
+  border-radius: 10px;
+  text-align: center;
 }
+
+input:hover {
+  background-color: salmon;
+}
+
+
+button {
+  margin: 10%;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: outset black 1rem;
+}
+
+button:hover {
+  border-color: green;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.delete {
+  background-color: red;
+  color: antiquewhite;
+}
+
+h2 {
+  border: solid 1rem;
+  background-color: paleturquoise;
+}
+
+.link{
+  border: solid black 1rem;
+  border-radius: 25px;
+  background-color:honeydew;
+  padding: 2%;
+}
+
+.link:hover {
+  border: solid blue 1rem;
+  background-color: plum;
+  transform: translateY(4px);
+}
+
+select {
+  font-size: 1rem;
+}
+
+select:hover {
+  background-color: salmon;
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/food/foo-2/foo101.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+
+
+
+
