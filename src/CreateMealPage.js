@@ -9,7 +9,6 @@ export default class CreateMealPage extends Component {
         category_id: 1,
         difficulty: '',
         price: 1,
-        categories: []
     }
 
     handleNameChange = e => {
@@ -47,8 +46,6 @@ export default class CreateMealPage extends Component {
     }
 
     render() {
-        console.log(this.state);
-        console.log(this.state.categories);
         return (
             <div>
                 <h2>Add A MealKit</h2>

@@ -10,11 +10,9 @@ export default class MealPage extends Component {
 
     componentDidMount = async () => {
         const meals = await getAllMeals();
-        console.log(meals);
         this.setState({ mealKits: meals });
     }
     render() {
-        console.log(this.state);
         return (
             <div className="meals">
                  {
