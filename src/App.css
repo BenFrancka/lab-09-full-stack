@@ -17,6 +17,11 @@
   font-size: 1.5rem;
 }
 
+.meal:hover {
+  background-color: plum;
+  transform: translateY(4px);
+}
+
 .top {
   font-size: 3rem;
   display: flex;
@@ -25,5 +30,62 @@
   border: solid black 1rem;
   background-color: cadetblue;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  border: solid blue 1rem;
+  border-radius: 25px;
+}
+
+input {
+  font-size: 1rem;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+button {
+  margin: 10%;
+  font-size: 2rem;
+  border-radius: 25px;
+  border: outset black 1rem;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.delete {
+  background-color: red;
+  color: antiquewhite;
+}
+
+h2 {
+  border: solid 1rem;
+  background-color: paleturquoise;
+}
+
+.link{
+  border: solid black 1rem;
+  border-radius: 25px;
+  background-color:powderblue;
+  padding: 2%;
+}
+
+.link:hover {
+  border: solid blue 1rem;
+  background-color: plum;
+  transform: translateY(4px);
+}
+
+select {
+  font-size: 1rem;
+}
+
+
+
 
 

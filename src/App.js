@@ -17,8 +17,8 @@ export default class App extends Component {
       <Router>
         <div className="top">
           <h2>Meal Kits Page</h2>
-          <p><Link to="/">Home</Link></p>
-          <p><Link to="/create">Add meal</Link>
+          <p className="link"><Link to="/">Home</Link></p>
+          <p className="link"><Link to="/create">Add meal</Link>
           </p>
           <Switch>
             <Route 
