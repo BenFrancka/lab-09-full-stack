@@ -74,7 +74,6 @@ export default class MealDetailPage extends Component {
     }
 
     render() {
-        console.log(this.state);
         return (
             <div>
                 <h2>
@@ -146,7 +145,7 @@ export default class MealDetailPage extends Component {
                         Update Meal
                     </button>
                 </form>
-                <button className="delete" onChange={this.handleDelete}>
+                <button className="delete" onClick={this.handleDelete}>
                     Delete Meal
                 </button>
             </div>
