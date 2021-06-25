@@ -3,23 +3,20 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   //useParams
 } from "react-router-dom";
 import './App.css';
 import MealPage from "./MealPage";
 import CreateMealPage from "./CreateMealPage";
 import MealDetailPage from "./MealDetailPage";
+import Header from './Header';
 
 export default class App extends Component {
   render() {
     return (
       <Router>
         <div className="top">
-          <h2>Meal Kits Page</h2>
-          <p className="link"><Link to="/">Home</Link></p>
-          <p className="link"><Link to="/create">Add meal</Link>
-          </p>
+          <Header />
           <Switch>
             <Route 
               path="/" 
