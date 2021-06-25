@@ -101,6 +101,13 @@ select:hover {
   background-color: salmon;
 }
 
+header {
+  background-color: gray;
+  width: 100%;
+  text-align: center;
+  border: darkgray solid 1rem;
+}
+
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/food/foo-2/foo101.cur), auto !important;} /* End https://www.cursors-4u.com */
 
 
